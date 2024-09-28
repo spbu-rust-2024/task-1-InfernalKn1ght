@@ -15,8 +15,11 @@ fn main() {
 
 	insertion_sort(&mut v);
 
-	for x in v {
-		print!("{x} ");
+	for i in 0..v.len() {
+		print!("{}", v[i]);
+		if i < v.len() - 1 {
+			print!(" ");
+		}
 	}
 }
 
